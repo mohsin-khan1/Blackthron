@@ -1,0 +1,17 @@
+body{
+    background-color: rgba(235, 233, 233, 0.979)!important;
+}
+.back-btn{
+    margin-left: -25%;
+    
+}
+.back-btn a{
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+}
+.checkout-btn{
+    position: absolute;
+    left: 0;
+    transform: translate(25%,0%);
+    }

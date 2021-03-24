@@ -1,0 +1,14 @@
+<div class="row">
+<div class="col-lg-9 ticket-listing">
+
+<app-ticket-list></app-ticket-list>
+</div>
+
+<div class="col-lg-3">
+    <app-ticket-summary></app-ticket-summary>
+    <div class="d-flex mt-4 justify-content-center align-items-center w-100 checkout-btn">
+        <a href="javascript:void(0)" [routerLink]="['/info']"
+          class="btn btn-success btn-block btn-lg justify-content-center align-items-center d-flex">Checkout</a>
+      </div>
+</div>
+</div>

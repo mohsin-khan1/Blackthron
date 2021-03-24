@@ -1,0 +1,104 @@
+input[type=radio]{
+    color: green;
+}
+.mat-stepper-horizontal {
+    margin-top: 8px;
+  }
+  
+  .mat-form-field {
+    margin-top: 16px;
+  }
+  .tickets{
+    width: 100%;
+    background-color: white;
+    height: 200px;
+    padding: 40px;
+  }
+  .collapse-form{
+    background: white;
+    padding: 60px;
+  }
+  .accordian-button{
+    border: none;
+    background: white;
+    padding: 22px;
+    text-align: left;
+  }
+  .accordian-button img{
+      float: right;
+  }
+  .tickets a{
+      float: right;
+      margin-top: -40px;
+  }
+  select{
+      height: 50px;
+  }
+
+  input[type="radio"] {
+    appearance: none;
+  }
+  
+  input[type="radio"] + label span {
+    border-radius: 50%;
+    box-sizing: border-box;
+    display: inline-block;
+    height: 1em; width: 1em;
+    z-index: 1;
+  }
+  
+  input[type="radio"]:checked + label span {
+    border: medium solid white;
+  }
+  
+  input:not(:checked) + label span { background: white;  box-shadow: 0 0 0 1px gray;   }
+  #yes:checked    + label span { background: green;    box-shadow: 0 0 0 1px green;    }
+  #no:checked    + label span { background: green; box-shadow: 0 0 0 1px green; }
+  
+  
+  span { margin-right: 0.25em; }
+
+
+  header  input[type="radio"] + label span {
+    border-radius: 50%;
+    box-sizing: border-box;
+    display: inline-block;
+    height: 1em; width: 1em;
+    margin-top: -21px;
+    position: absolute;
+  }
+
+ 
+
+  header #session + label span {
+    border-radius: 50%;
+    box-sizing: border-box;
+    display: inline-block;
+    height: 1em; width: 1em;
+    margin-top: -21px;
+    position: absolute;
+    margin-left: 40%;
+  }
+  .no{
+    position: absolute;
+    margin-left: 40%;
+  }
+  header #payment + label span{
+    position: absolute;
+    margin-left: 82%;
+  }
+  .payment{
+    position: absolute;
+    margin-left: 82%;
+  }
+  hr{
+    width: 95%;
+    background-color: rgb(0 0 0 / 26%);
+    margin-top: -46px;
+    position: absolute;
+    height: 1px;
+  }
+  input:not(:checked) + label span { background: white;  box-shadow: 0 0 0 1px gray;   }
+  #ticket:checked    + label span { background: green;    box-shadow: 0 0 0 1px green;    }
+  #session:checked    + label span { background: green; box-shadow: 0 0 0 1px green; }
+  #payment:checked    + label span { background: green; box-shadow: 0 0 0 1px green; }

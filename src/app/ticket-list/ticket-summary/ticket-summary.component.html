@@ -1,0 +1,43 @@
+<div class="ticket-summary">
+  <h2>Order Summary</h2>
+
+  <div class="tickets-prices mt-5 ">
+    <div class="d-flex" *ngIf="(this.freeObservable | async).count > 0">
+      <span class="mb-3 w-100">{{ (this.freeObservable | async).count }} x Free Ticket</span>
+      <span class="amount text-right w-100">${{getTotalCost((this.freeObservable | async).count, (this.freeObservable | async).price)}}</span>
+    </div>
+    <div class="d-flex" *ngIf="(this.baseObservable | async).count > 0">
+      <span class="mb-3 w-100">{{ (this.baseObservable | async).count }} x Alumni Base Ticket</span>
+      <span class="amount text-right w-100">${{getTotalCost((this.baseObservable | async).count, (this.baseObservable | async).price)}}</span>
+    </div>
+    <div class="d-flex" *ngIf="(this.vipObservable | async).count > 0">
+      <span class="mb-3 w-100">{{ (this.vipObservable | async).count }} x Alumni VIP Ticket</span>
+      <span class="amount text-right w-100">${{getTotalCost((this.vipObservable | async).count, (this.vipObservable | async).price)}}</span>
+    </div>
+  </div>
+  <div class="tickets-subtotal mt-5 ">
+    <p>Subtotal</p>
+    <div class="d-flex">
+      <span class="mb-3 w-100">Subtotal</span>
+      <span class="amount text-right w-100">${{ getSubTotal((this.freeObservable | async), (this.baseObservable | async), (this.vipObservable | async)) }}</span>
+    </div>
+    <div class="d-flex">
+      <span class="mb-3 w-100">Taxes</span>
+      <span class="amount text-right w-100">${{ tax }}</span>
+    </div>
+  </div>
+  <div class="d-flex mt-4 total">
+    <span class="mb-3 w-100">Total</span>
+    <span class="amount text-right w-100">${{ getTotal((this.freeObservable | async), (this.baseObservable | async), (this.vipObservable | async)) }}</span>
+  </div>
+
+  <a data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+    aria-controls="collapseExample">Have a promo code?</a>
+  <div class="collapse" id="collapseExample">
+    <div class="d-flex mt-4">
+      <input type="text" class="btn-input form-control" placeholder="Promo code"> <button
+        class="btn btn-outline-success ml-2">Apply</button>
+    </div>
+  </div>
+</div>
+

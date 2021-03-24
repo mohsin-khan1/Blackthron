@@ -1,0 +1,23 @@
+
+<body>
+   <div class="back-btn">
+    <img src="/assets/img/left-arrow.png" height="30" width="30" alt=""> <a href="javascript:void(0)" [routerLink]="['/list']">Back</a>
+    </div>
+    <div class="row">
+        
+        <div class="col-lg-9 ticket-listing">
+        
+            <app-ticket-info></app-ticket-info>
+        </div>
+        
+        <div class="col-lg-3">
+            <app-ticket-summary></app-ticket-summary>
+            <div class="d-flex mt-4 justify-content-center align-items-center w-100 checkout-btn">
+                <a href="javascript:void(0)" 
+                  class="btn btn-success btn-block btn-lg justify-content-center align-items-center d-flex">Review Session</a>
+              </div>
+        </div>
+        </div>
+
+    
+</body>

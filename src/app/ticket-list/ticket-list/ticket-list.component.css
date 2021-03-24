@@ -1,0 +1,32 @@
+
+.ticket-detail{
+    border-bottom: 1px solid rgba(128, 128, 128, 0.178);
+}
+.ticket-qty{
+    width: 75px;
+    height: 40px;
+    border-color: gray;
+    border-radius: 5px;
+}
+label{
+    font-weight: 700;
+}
+p{
+    font-weight: 600;
+}
+.waitlist{
+    background-color:rgb(181 178 178 / 18%) ;
+    height: 50px;
+    border-radius: 2px;
+}
+.waitlist p{
+    font-weight: 400;
+}
+.btn-input{
+    border-radius: 0px 5px 5px 0px;
+    border:1px solid black ;
+}
+.btn-dolor{
+    border-radius: 5px 0px 0px 5px;
+    border-right: none;
+}
